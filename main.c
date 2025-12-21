@@ -40,20 +40,20 @@ smm_player_t *smm_players;
 
 void generatePlayers(int n, int initEnergy); //generate a new player
 void printPlayerStatus(void); //print all player status at the beginning of each turn
-
+void printGrades(int player); //print grade history of the player
 
 //function prototypes
 #if 0
 
 
-void printGrades(int player); //print grade history of the player
+
 float calcAverageGrade(int player); //calculate average grade of the player
 smmGrade_e takeLecture(int player, char *lectureName, int credit); //take the lecture (insert a grade of the player)
-void printGrades(int player); //print all the grade history of the player
+
 #endif
 
 
-//when game over get winner's Object grade And Credit
+//print grade history of the player
 void printGrades(int player)
 {
     int i;
